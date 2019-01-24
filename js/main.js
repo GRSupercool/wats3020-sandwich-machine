@@ -78,10 +78,10 @@ let totalPrice = subtototal+ orderTax;
 
 let receiptTemplate = `
     <p>SANDWICH ORDER</p>
-    <p>Bread: wheat</p>
-    <p>Meat: ham, turkey</p>
-    <p>Toppings: lettuce, tomato, peppers, spinach</p>
-    <p>Condiments: mayo, mustard, thousand island</p>
+    <p>Bread: $(bread) </p>
+    <p>Meat: $(chicken)</p>
+    <p>Toppings: $(cheese)</p>
+    <p>Condiments: $(mustard)</p>
     <p>---------------------</p>
     <p class="text-right">Sandwich: $4.42</p>
     <p class="text-right">Meat: $2.00</p>
