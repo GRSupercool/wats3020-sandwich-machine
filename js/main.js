@@ -7,21 +7,26 @@
 // Provide examples where it may help (e.g. show a comma-separated list of
 // toppings to indicate how to specify toppings, etc.)
 //
+// 
+//  
+let bread= prompt("What kind of bread do you want? (wheat, rye, parmesean)"," parmesean");
 
-let bread= prompt("What kind of bread do you want? (wheat, rye, parmesean)"," wheat");
 
-
-
+// 
+// 
+// 
 
 let meats= prompt("What kind of meats do you want? You may select more than one by seperating with comma, for example: chicken, bacon, beef", "chicken");
 
 
 
-
+// 
+// 
+// 
 let toppings= prompt("Enter comma seperated list of toppings (such as, tomato, pickles, cheese, onions):","cheese, pickles, lettuce");
 
-
-// Again, we should expect a comma-separated list if items here.
+// 
+// 
 let condiments= prompt("Enter comma seperated list of condiments (such as, mayo, mustard, ketchup, horseradish,bbq sauce):","mustard");
 
 // Step Two ////////////////////////////////////////////////////////////
@@ -38,32 +43,38 @@ let prices = {
     condiments: 0.25 // Each condiment costs $0.25
 };
 
-
+// 
 
 let meatsArray = meats.split(',');
 let toppingsArray = toppings.split(',');
 let condimentsArray = condiments.split(',');
 
-
+// 
+// 
+// 
+// 
 
 let meatsCost = meatsArray.length * prices.meats;
 let toppingsCost = toppingsArray.length*prices.toppings;
 let condimentsCost = condimentsArray.length*prices.condiments;
 
-
+// 
 let subtotal = meatsCost + toppingsCost + condimentsCost + prices.sandwich;
 
-
+// 
 let waStateTaxRate = 0.065;
 let orderTax = subtotal * waStateTaxRate;
 
-
+// 
 let totalPrice = subtotal+ orderTax;
 
 
 // Step Three //////////////////////////////////////////////////////////
 //
-
+// 
+// 
+// 
+// 
 
 let receiptTemplate = `
     <p>SANDWICH ORDER</p>
